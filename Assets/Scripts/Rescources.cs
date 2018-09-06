@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Rescources : MonoBehaviour {
     public Text Text;
+
 	// Use this for initialization
 	void Start () {
 	    //lygiuhuhpuhrui
