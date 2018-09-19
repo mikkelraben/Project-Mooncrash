@@ -4,8 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Rescources : MonoBehaviour {
-    public Text Text;
-    public float BankEfficieny, MaterialMineEfficieny;
+    public Text MoneyText,MaterialText;
+    public Button MoneyButton, MaterialButton;
+    public float BankEfficieny = 1f, MaterialMineEfficieny = .05f;
     public float Money, Material;
     public int Bank, MaterialMine;
     public float BankIncome, MaterialMineIncome;
@@ -17,9 +18,33 @@ public class Rescources : MonoBehaviour {
         PriceMaterialMine = Mathf.Pow(MaterialMine, 2)+1;
         BankIncome = Bank * BankEfficieny;
         MaterialMineIncome = MaterialMine * MaterialMineEfficieny;
-        Money = Money + BankIncome;
-        Material = Material + MaterialMineIncome;
+        Money = Money + BankIncome * Time.deltaTime;
+        Material = Material + MaterialMineIncome * Time.deltaTime;
 
+        if(Money - PriceBank < 0){
+            MoneyButton.interactable = false;
+        }
+        else{
+            MoneyButton.interactable = true;
+        }
+        if (Money - PriceMaterialMine < 0)
+        {
+            MaterialButton.interactable = false;
+        }
+        else{
+            MaterialButton.interactable = true;
+        }
+
+        //Do This last
+        MoneyText.text = "Money: " + Money;
+        MaterialText.text = "Material: " + Material;
 	}
-
+    public void MOARBANK(){
+        Bank++;
+        Money = Money - PriceBank;
+    }
+    public void MOARMINES() {
+        MaterialMine++;
+        Money = Money - PriceMaterialMine;
+    }
 }
