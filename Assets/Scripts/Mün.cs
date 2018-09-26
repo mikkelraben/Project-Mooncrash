@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Mün : MonoBehaviour {
     public float MaterialOnMün;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -14,6 +15,6 @@ public class Mün : MonoBehaviour {
 		
 	}
     void TransferToMün(){
-
+        
     }
 }
