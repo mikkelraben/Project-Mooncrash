@@ -14,6 +14,7 @@ public class FreighterSpawn : MonoBehaviour {
 	}
 	public void SpawnFreighter ()
     {
+        Debug.Log("OK");
         SpawnedFreighter = Instantiate(Freighter, Mars.transform.position, Quaternion.identity);
         Debug.Log("Spawned");
 

@@ -4,7 +4,7 @@ public class Mün : MonoBehaviour {
     public float MaterialOnMün;
     float MaterialOnMars;
     public RescourcesOnMars RescourcesOnMarsScript;
-    FreighterSpawn freighterSpawn;
+    public FreighterSpawn freighterSpawn;
 
 	//Use this for initialization
 	void Start () {
@@ -16,11 +16,11 @@ public class Mün : MonoBehaviour {
 		
 	}
     public void TransferToMün() {
-        MaterialOnMars = RescourcesOnMarsScript.Material;
-        if(MaterialOnMars > 20)
+        
+        if(RescourcesOnMarsScript.Material > 20f)
         {
-            MaterialOnMars = MaterialOnMars - 20;
-            MaterialOnMün = MaterialOnMün + 20;
+            RescourcesOnMarsScript.Material = RescourcesOnMarsScript.Material - 20;
+            MaterialOnMün = MaterialOnMün + 20f;
             freighterSpawn.SpawnFreighter();
         }
     }
