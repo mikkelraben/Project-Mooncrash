@@ -11,31 +11,36 @@ public class RescourcesOnMars : MonoBehaviour {
     public int Bank, MaterialMine;
     public float BankIncome, MaterialMineIncome;
     public float PriceBank, PriceMaterialMine;
-	
-	// Update is called once per frame
-	void Update () {
-        PriceBank = Mathf.Pow(Bank,1.3f)+1;
-        PriceMaterialMine = Mathf.Pow(MaterialMine, 2)+1;
+
+    // Update is called once per frame
+    void Update() {
+        PriceBank = Mathf.Pow(Bank, 1.3f) + 1;
+        PriceMaterialMine = Mathf.Pow(MaterialMine, 2) + 1;
         BankIncome = Bank * BankEfficieny;
         MaterialMineIncome = MaterialMine * MaterialMineEfficieny;
         Money = Money + BankIncome * Time.deltaTime;
         Material = Material + MaterialMineIncome * Time.deltaTime;
 
-        if(Money - PriceBank < 0){
+        if (Money - PriceBank < 0) {
             MoneyButton.interactable = false;
         }
-        else{
+        else {
             MoneyButton.interactable = true;
         }
-        
-        if (Money - PriceMaterialMine < 0)
+        if (Bank != 0)
         {
-            MaterialButton.interactable = false;
+            if (Money - PriceMaterialMine < 0)
+            {
+                MaterialButton.interactable = false;
+            }
+            else
+            {
+                MaterialButton.interactable = true;
+            }
+       
         }
-        else{
-            MaterialButton.interactable = true;
-        }
-
+        else { MaterialButton.interactable = false; }
+    
         //Do This last
         MoneyText.text = "Money: " + Money;
         MaterialText.text = "Material: " + Material;
