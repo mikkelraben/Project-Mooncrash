@@ -9,60 +9,43 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1806408676655170}
+  m_RootGameObject: {fileID: 1885074400673524}
   m_IsPrefabAsset: 1
---- !u!1 &1806408676655170
+--- !u!1 &1885074400673524
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4882664360391480}
-  - component: {fileID: 212377716122360684}
-  - component: {fileID: 114480216386397178}
+  - component: {fileID: 4893001663634728}
+  - component: {fileID: 212572027183658770}
   m_Layer: 0
-  m_Name: le freightuere
+  m_Name: Moon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4882664360391480
+--- !u!4 &4893001663634728
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1806408676655170}
+  m_GameObject: {fileID: 1885074400673524}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -6.01, y: 5.38, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114480216386397178
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1806408676655170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bd2f2e65e9bcd943afbcc992b5af94b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Moon: {fileID: 1885074400673524, guid: 861de3423797d3c4eb3374e425854111, type: 2}
-  Mars: {fileID: 1475317477701846, guid: 41ad919e8801c974ba741d1043ca1f1c, type: 2}
-  FreighterVector3: {x: 0, y: 0, z: 0}
-  Progress: 0
-  Speed: 0.01
---- !u!212 &212377716122360684
+--- !u!212 &212572027183658770
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1806408676655170}
+  m_GameObject: {fileID: 1885074400673524}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -92,12 +75,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2724b858e4e2a495b88fe22bbf5e02b3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 893ed676e49e94a67b1192b3a5eab227, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 0.75}
+  m_Size: {x: 1.28, y: 1.28}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

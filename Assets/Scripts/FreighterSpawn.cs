@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FreighterMovement : MonoBehaviour {
+public class FreighterSpawn : MonoBehaviour {
     public GameObject Moon, Mars, Freighter;
     GameObject SpawnedFreighter;
     public Vector3 FreighterMove;
+    public float Progress;
 
     // Use this for initialization
     void Start() {
@@ -13,19 +14,13 @@ public class FreighterMovement : MonoBehaviour {
 	}
 	public void SpawnFreighter ()
     {
-        SpawnedFreighter = Instantiate(Freighter, new Vector3(5.16f, 0.3f), Quaternion.identity);
+        SpawnedFreighter = Instantiate(Freighter, Mars.transform.position, Quaternion.identity);
         Debug.Log("Spawned");
 
     }
 	// Update is called once per frame
 	void Update () {
-        if (SpawnedFreighter != null)
-        {
 
-
-            SpawnedFreighter.transform.Translate(FreighterMove/200);
-        }
-     
 	}
     
     

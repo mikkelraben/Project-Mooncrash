@@ -27,6 +27,7 @@ public class Rescources : MonoBehaviour {
         else{
             MoneyButton.interactable = true;
         }
+        
         if (Money - PriceMaterialMine < 0)
         {
             MaterialButton.interactable = false;
