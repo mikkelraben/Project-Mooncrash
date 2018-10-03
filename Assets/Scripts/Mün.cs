@@ -14,7 +14,7 @@ public class Mün : MonoBehaviour {
 	void Update () {
 		
 	}
-    void TransferToMün(){
+    public void TransferToMün(){
         
     }
 }
