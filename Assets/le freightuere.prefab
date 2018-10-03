@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4882664360391480}
   - component: {fileID: 212377716122360684}
+  - component: {fileID: 114480216386397178}
   m_Layer: 0
   m_Name: le freightuere
   m_TagString: Untagged
@@ -40,6 +41,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114480216386397178
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1806408676655170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bd2f2e65e9bcd943afbcc992b5af94b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Moon: {fileID: 1885074400673524, guid: 861de3423797d3c4eb3374e425854111, type: 2}
+  Mars: {fileID: 1475317477701846, guid: 41ad919e8801c974ba741d1043ca1f1c, type: 2}
+  FreighterVector3: {x: 0, y: 0, z: 0}
+  Progress: 0
+  Speed: 0.01
 --- !u!212 &212377716122360684
 SpriteRenderer:
   m_ObjectHideFlags: 1
