@@ -1,14 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Mün : MonoBehaviour {
-<<<<<<< HEAD
+public class Mün : MonoBehaviour {
     public float MaterialOnMün;
-=======
->>>>>>> parent of 2512440... didn't do much
+    float MaterialOnMars;
+    public RescourcesOnMars Rescources;
 
-	// Use this for initialization
+	/     Use this for initialization
 	void Start () {
 		
 	}
@@ -18,6 +15,12 @@ public class Mün : MonoBehaviour {
 		
 	}
     public void TransferToMün(){
-        
+        //MaterialOnMars = Rescources.Material;
+        if (MaterialOnMars > 20)
+        {
+            MaterialOnMars = MaterialOnMars - 20;
+            MaterialOnMün = MaterialOnMün + 20;
+            TransferToMün();
+        }
     }
 }

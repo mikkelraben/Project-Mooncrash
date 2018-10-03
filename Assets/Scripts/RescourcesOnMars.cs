@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Rescources : MonoBehaviour {
+public class RescourcesOnMars : MonoBehaviour {
     public Text MoneyText,MaterialText;
     public Button MoneyButton, MaterialButton;
     public float BankEfficieny = 1f, MaterialMineEfficieny = .05f;
