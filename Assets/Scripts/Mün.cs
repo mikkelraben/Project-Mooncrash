@@ -13,15 +13,19 @@ public class Mün : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        MaterialOnMars = RescourcesOnMarsScript.Material;
+    }
     public void TransferToMün() {
-        
-        if(RescourcesOnMarsScript.Material > 20f)
+        MaterialOnMars = RescourcesOnMarsScript.Material;
+        if (MaterialOnMars > 20f)
         {
+            Debug.Log("works");
             RescourcesOnMarsScript.Material = RescourcesOnMarsScript.Material - 20;
             MaterialOnMün = MaterialOnMün + 20f;
             freighterSpawn.SpawnFreighter();
+        }
+        else{
+            Debug.Log("NO");
         }
     }
 }
