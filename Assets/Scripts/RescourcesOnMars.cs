@@ -6,12 +6,19 @@ using UnityEngine.UI;
 public class RescourcesOnMars : MonoBehaviour {
     public Text MoneyText,MaterialText;
     public Button MoneyButton, MaterialButton;
-    public float BankEfficieny = 1f, MaterialMineEfficieny = .05f;
+    public float BankEfficieny, MaterialMineEfficieny = .05f;
     public float Money, Material;
     public int Bank, MaterialMine;
     public float BankIncome, MaterialMineIncome;
     public float PriceBank, PriceMaterialMine;
 
+    private void Start()
+    {
+        BankEfficieny = 1;
+        MaterialMineEfficieny = 1;
+
+       
+    }
     // Update is called once per frame
     void Update() {
         PriceBank = Mathf.Pow(Bank, 1.3f) + 1;
