@@ -6,7 +6,7 @@ public class Efficency : MonoBehaviour {
     public float MineLevel, BankLevel;
 	// Use this for initialization
 	void Start () {
-        MineLeve = 0;
+        MineLevel = 0;
         BankLevel = 0;
 	}
 	
