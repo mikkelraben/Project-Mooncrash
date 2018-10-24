@@ -11,6 +11,7 @@ public class RescourcesOnMars : MonoBehaviour {
     public int Bank, MaterialMine;
     public float BankIncome, MaterialMineIncome;
     public float PriceBank, PriceMaterialMine;
+    public GameObject Mars;
 
     private void Start()
     {

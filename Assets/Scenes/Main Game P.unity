@@ -330,7 +330,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Transfer Material (10)
+  m_Text: Transfer Material (20)
 --- !u!222 &59789275
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -759,6 +759,7 @@ GameObject:
   - component: {fileID: 797936466}
   - component: {fileID: 797936467}
   - component: {fileID: 797936468}
+  - component: {fileID: 797936469}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -851,6 +852,7 @@ MonoBehaviour:
   MaterialMineIncome: 0
   PriceBank: 0
   PriceMaterialMine: 0
+  Mars: {fileID: 0}
 --- !u!114 &797936466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -894,6 +896,18 @@ MonoBehaviour:
   RescourcesOnMarsScript: {fileID: 797936465}
   freighterSpawn: {fileID: 797936466}
   text: {fileID: 33738907}
+--- !u!114 &797936469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 797936461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747ef810f2dca4e4db0381b4a7b4b760, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "M\xFCn": {fileID: 0}
 --- !u!1 &994496364
 GameObject:
   m_ObjectHideFlags: 0
@@ -1932,6 +1946,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1519798317}
   - component: {fileID: 1519798316}
+  - component: {fileID: 1519798318}
   m_Layer: 0
   m_Name: Moon
   m_TagString: Untagged
@@ -1992,12 +2007,30 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1519798315}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.01, y: 5.38, z: 0}
+  m_LocalPosition: {x: -4.7, y: 2.48, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1519798318
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1519798315}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3b4e2a250b95c46908a8ba42d38e08b0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1671183691
 GameObject:
   m_ObjectHideFlags: 0
@@ -2197,7 +2230,7 @@ GameObject:
   - component: {fileID: 1892565232}
   - component: {fileID: 1892565231}
   m_Layer: 5
-  m_Name: Transfer Material (10)
+  m_Name: Transfer Material (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2383,7 +2416,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2053451104}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 797936469}
+        m_MethodName: Destroy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2053451104
