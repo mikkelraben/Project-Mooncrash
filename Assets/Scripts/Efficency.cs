@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Efficency : MonoBehaviour {
     public float MineLevel, BankLevel, FreighterLevel;
-    RescourcesOnMars RescourcesOnMars;
+    public RescourcesOnMars RescourcesOnMars;
 
 	void Start () {
         MineLevel = 1;
@@ -14,18 +14,20 @@ public class Efficency : MonoBehaviour {
 
     public void MineUpgrade()
     {
-        if (RescourcesOnMars.Money < 100 * MineLevel)
+        if (RescourcesOnMars.Money > 100 * MineLevel)
         {
             RescourcesOnMars.Money = RescourcesOnMars.Money - (100 * MineLevel);
+            RescourcesOnMars.MaterialMineEfficieny= RescourcesOnMars.MaterialMineEfficieny + 0.25f;
             MineLevel++;
         }
     }
 
     public void BankUpgrade()
     {
-        if (RescourcesOnMars.Money < (100 * BankLevel))
+        if (RescourcesOnMars.Money > (100 * BankLevel))
         {
             RescourcesOnMars.Money = RescourcesOnMars.Money - (100 * BankLevel);
+            RescourcesOnMars.BankEfficieny= RescourcesOnMars.BankEfficieny+ 0.25f;
             BankLevel++;
         }
     }

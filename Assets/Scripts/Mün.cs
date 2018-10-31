@@ -7,10 +7,11 @@ public class Mün : MonoBehaviour {
     public RescourcesOnMars RescourcesOnMarsScript;
     public FreighterSpawn freighterSpawn;
     public Text text;
+    public float FreighterCargoBayMaximumCapacityLoadCarryingAbilities;
 
 	//Use this for initialization
 	void Start () {
-		
+        FreighterCargoBayMaximumCapacityLoadCarryingAbilities = 1;
 	}
 	
 	// Update is called once per frame
