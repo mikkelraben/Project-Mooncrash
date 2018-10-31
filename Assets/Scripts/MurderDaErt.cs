@@ -3,16 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MurderDaErt : MonoBehaviour {
-    public GameObject Mün;
+    GameObject Mün;
+    public GameObject MainCamera;
     Animator animator;
+    RescourcesOnMars RescourcesOnMars;
+    bool DestroyErt;
+    public GameObject[] UiObejcts;
     void Start()
     {
+        RescourcesOnMars = MainCamera.GetComponent<RescourcesOnMars>();
         Mün = GameObject.Find("Moon");
         animator = Mün.GetComponent<Animator>();
-        animator.StopPlayback();
+
     }
     public void Destroy()
     {
-        animator.StartPlayback();
+        if(RescourcesOnMars.Bank > 10000f && RescourcesOnMars.Material > 10000f){
+            DestroyErt = true;
+            animator.SetBool("CrashOrNot", DestroyErt);
+        }
     }
 }

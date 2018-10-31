@@ -760,6 +760,7 @@ GameObject:
   - component: {fileID: 797936467}
   - component: {fileID: 797936468}
   - component: {fileID: 797936469}
+  - component: {fileID: 797936470}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -893,6 +894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "MaterialOnM\xFCn": 0
+  MaterialOnMars: 0
   RescourcesOnMarsScript: {fileID: 797936465}
   freighterSpawn: {fileID: 797936466}
   text: {fileID: 33738907}
@@ -908,6 +910,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "M\xFCn": {fileID: 0}
+--- !u!114 &797936470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 797936461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 624fabc117ac54078bdd77b3344d63f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TheObjectThatShaltBeToglth: {fileID: 480791338}
 --- !u!1 &994496364
 GameObject:
   m_ObjectHideFlags: 0
@@ -2007,7 +2021,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1519798315}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.7, y: 2.48, z: 0}
+  m_LocalPosition: {x: -6, y: 5.4, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
