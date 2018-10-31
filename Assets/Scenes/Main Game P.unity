@@ -614,7 +614,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Upgrade Bank
 --- !u!222 &675317071
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -761,6 +761,7 @@ GameObject:
   - component: {fileID: 797936468}
   - component: {fileID: 797936469}
   - component: {fileID: 797936470}
+  - component: {fileID: 797936471}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -923,6 +924,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TheObjectThatShaltBeToglth: {fileID: 480791338}
+--- !u!114 &797936471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 797936461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9ea23c02491dad4c8882506f17e5787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MineLevel: 0
+  BankLevel: 0
+  FreighterLevel: 0
+  RescourcesOnMars: {fileID: 0}
 --- !u!1 &994496364
 GameObject:
   m_ObjectHideFlags: 0
@@ -1208,7 +1224,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Upgrade Mine
 --- !u!222 &1054281753
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1494,7 +1510,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1226779956}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 797936471}
+        m_MethodName: BankUpgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1226779956
@@ -2121,7 +2148,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1671183694}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 797936471}
+        m_MethodName: MineUpgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1671183694
