@@ -21,6 +21,10 @@ public class MurderDaErt : MonoBehaviour {
         if(RescourcesOnMars.Bank > 10000f && RescourcesOnMars.Material > 10000f){
             DestroyErt = true;
             animator.SetBool("CrashOrNot", DestroyErt);
+            for (int i = 0; i < UiObejcts.Length; i++)
+            {
+                UiObejcts[i].SetActive(false);
+            }
         }
     }
 }
