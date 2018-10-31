@@ -846,7 +846,7 @@ MonoBehaviour:
   MaterialButton: {fileID: 1443601128}
   BankEfficieny: 1
   MaterialMineEfficieny: 1
-  Money: 1
+  Money: 50000
   Material: 10000
   Bank: 0
   MaterialMine: 0

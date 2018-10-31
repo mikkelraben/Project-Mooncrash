@@ -18,7 +18,8 @@ public class MurderDaErt : MonoBehaviour {
     }
     public void Destroy()
     {
-        if(RescourcesOnMars.Bank > 10000f && RescourcesOnMars.Material > 10000f){
+        if(RescourcesOnMars.Money >= 50000f && RescourcesOnMars.Material >= 10000f){
+            Debug.Log("Yeha");
             DestroyErt = true;
             animator.SetBool("CrashOrNot", DestroyErt);
             for (int i = 0; i < UiObejcts.Length; i++)
