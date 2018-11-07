@@ -1018,7 +1018,7 @@ MonoBehaviour:
   BankLevel: 0
   FreighterLevel: 0
   RescourcesOnMars: {fileID: 797936465}
-  "M\xFCn": {fileID: 0}
+  "M\xFCn": {fileID: 797936468}
 --- !u!114 &797936472
 MonoBehaviour:
   m_ObjectHideFlags: 0
