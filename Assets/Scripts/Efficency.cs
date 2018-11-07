@@ -39,7 +39,7 @@ public class Efficency : MonoBehaviour {
         if (RescourcesOnMars.Money > (100*FreighterLevel))
         {
             RescourcesOnMars.Money = RescourcesOnMars.Money - (100 * FreighterLevel);
-            RescourcesOnMars.BankEfficieny = Mün.FreighterCargoBayMaximumCapacityLoadCarryingAbilities + 0.25f;
+            Mün.FreighterCargoBayMaximumCapacityLoadCarryingAbilities = Mün.FreighterCargoBayMaximumCapacityLoadCarryingAbilities + 0.05f;
             FreighterLevel++;
         }
     }
