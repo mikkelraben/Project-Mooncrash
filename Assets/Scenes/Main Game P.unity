@@ -255,7 +255,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 'Material On Moon: 0'
 --- !u!222 &33738908
 CanvasRenderer:
   m_ObjectHideFlags: 0
