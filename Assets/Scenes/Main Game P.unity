@@ -971,7 +971,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "MaterialOnM\xFCn": 0
-  MaterialOnMars: 0
   RescourcesOnMarsScript: {fileID: 797936465}
   freighterSpawn: {fileID: 797936466}
   text: {fileID: 33738907}
@@ -1019,7 +1018,7 @@ MonoBehaviour:
   BankLevel: 0
   FreighterLevel: 0
   RescourcesOnMars: {fileID: 797936465}
-  "M\xFCn": {fileID: 0}
+  "M\xFCn": {fileID: 797936468}
 --- !u!114 &797936472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1032,7 +1031,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "MaterialOnM\xFCn": 0
-  MaterialOnMars: 0
   RescourcesOnMarsScript: {fileID: 0}
   freighterSpawn: {fileID: 0}
   text: {fileID: 0}
