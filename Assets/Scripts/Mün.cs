@@ -20,10 +20,10 @@ public class Mün : MonoBehaviour {
 	}
     public void TransferToMün() {
         
-        if(RescourcesOnMarsScript.Material > 20f*FreighterCargoBayMaximumCapacityLoadCarryingAbilities)
+        if(RescourcesOnMarsScript.Material > 2f*FreighterCargoBayMaximumCapacityLoadCarryingAbilities)
         {
             RescourcesOnMarsScript.Material = RescourcesOnMarsScript.Material - 20f*FreighterCargoBayMaximumCapacityLoadCarryingAbilities;
-            MaterialOnMün = MaterialOnMün + 20f*FreighterCargoBayMaximumCapacityLoadCarryingAbilities;
+            MaterialOnMün = MaterialOnMün + 2f*FreighterCargoBayMaximumCapacityLoadCarryingAbilities;
             freighterSpawn.SpawnFreighter();
             text.text = "Material On Moon: " + MaterialOnMün;
         }
