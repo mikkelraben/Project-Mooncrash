@@ -7,6 +7,7 @@ public class Mün : MonoBehaviour {
     public RescourcesOnMars RescourcesOnMarsScript;
     public FreighterSpawn freighterSpawn;
     public Text text;
+    public Text MaterialText;
     public float FreighterCargoBayMaximumCapacityLoadCarryingAbilities;
 
 	//Use this for initialization
@@ -16,16 +17,17 @@ public class Mün : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        MaterialText.text = "Transfer material (" + FreighterCargoBayMaximumCapacityLoadCarryingAbilities.ToString("#.00") + ")";
+    }
     public void TransferToMün() {
         
-        if(RescourcesOnMarsScript.Material > 2f*FreighterCargoBayMaximumCapacityLoadCarryingAbilities)
+        if(RescourcesOnMarsScript.Material > 20f*FreighterCargoBayMaximumCapacityLoadCarryingAbilities)
         {
             RescourcesOnMarsScript.Material = RescourcesOnMarsScript.Material - 20f*FreighterCargoBayMaximumCapacityLoadCarryingAbilities;
             MaterialOnMün = MaterialOnMün + 2f*FreighterCargoBayMaximumCapacityLoadCarryingAbilities;
             freighterSpawn.SpawnFreighter();
-            text.text = "Material On Moon: " + MaterialOnMün;
+            MaterialText.text = "Transfer material(" + FreighterCargoBayMaximumCapacityLoadCarryingAbilities.ToString("#.00") + ")";
+            text.text = "Material On Moon: " + MaterialOnMün.ToString("#.00");
         }
     }
 }

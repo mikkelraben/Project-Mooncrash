@@ -221,7 +221,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 6.2, y: -36.93}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 196.8, y: 30}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &33738907
 MonoBehaviour:
@@ -504,7 +504,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &480791339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -557,8 +557,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -189.71, y: 84.7}
-  m_SizeDelta: {x: 161.4, y: 103.9}
+  m_AnchoredPosition: {x: -148.1, y: 84.7}
+  m_SizeDelta: {x: 203, y: 103.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &514630137
 GameObject:
@@ -922,7 +922,7 @@ MonoBehaviour:
   MaterialButton: {fileID: 1443601128}
   BankEfficieny: 1
   MaterialMineEfficieny: 1
-  Money: 50000
+  Money: 1e+13
   Material: 10000
   Bank: 0
   MaterialMine: 0
@@ -946,7 +946,7 @@ MonoBehaviour:
   Mars: {fileID: 1866584188}
   Freighter: {fileID: 1806408676655170, guid: 1f3497dda484f6d49b89f11f8eb52380, type: 2}
   FreighterMove: {x: 0, y: 0, z: 0}
-  Progress: 0
+  AmountSpawned: 0
 --- !u!114 &797936467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -974,6 +974,7 @@ MonoBehaviour:
   RescourcesOnMarsScript: {fileID: 797936465}
   freighterSpawn: {fileID: 797936466}
   text: {fileID: 33738907}
+  MaterialText: {fileID: 59789274}
   FreighterCargoBayMaximumCapacityLoadCarryingAbilities: 0
 --- !u!114 &797936469
 MonoBehaviour:
@@ -1027,14 +1028,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 797936461}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c862302a107b947fbb2d587262ba027e, type: 3}
+  m_Script: {fileID: 11500000, guid: eafaadc65b2664cdbad8c0c3184aba64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "MaterialOnM\xFCn": 0
-  RescourcesOnMarsScript: {fileID: 0}
-  freighterSpawn: {fileID: 0}
-  text: {fileID: 0}
-  FreighterCargoBayMaximumCapacityLoadCarryingAbilities: 0
+  GetFreighter: {fileID: 797936466}
+  rescources: {fileID: 797936465}
+  HEAT: 0
+  HeatText: {fileID: 2051980904}
 --- !u!1 &994496364
 GameObject:
   m_ObjectHideFlags: 0
@@ -1617,7 +1617,7 @@ GameObject:
   - component: {fileID: 1122463543}
   - component: {fileID: 1122463542}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Het
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1634,14 +1634,15 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1511076874}
+  - {fileID: 2051980903}
   m_Father: {fileID: 1051930582}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 274.5, y: -215.32}
-  m_SizeDelta: {x: -548.9, y: -430.55}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0.049987793, y: -0.045013428}
+  m_SizeDelta: {x: 171.59, y: 65.45}
+  m_Pivot: {x: 1, y: 0}
 --- !u!114 &1122463542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2391,7 +2392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.995283, b: 0.995283, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2666,7 +2667,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 261.27, y: 65.4}
+  m_SizeDelta: {x: 182.47, y: 65.4}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1758045206
 MonoBehaviour:
@@ -2812,7 +2813,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 35.3}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 203, y: 30}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1892565231
 MonoBehaviour:
@@ -2900,6 +2901,81 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1892565229}
   m_CullTransparentMesh: 0
+--- !u!1 &2051980902
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2051980903}
+  - component: {fileID: 2051980905}
+  - component: {fileID: 2051980904}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2051980903
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2051980902}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1122463541}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -4, y: 10}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 1, y: 0}
+--- !u!114 &2051980904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2051980902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 18
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Heat : 100%'
+--- !u!222 &2051980905
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2051980902}
+  m_CullTransparentMesh: 0
 --- !u!1 &2053451101
 GameObject:
   m_ObjectHideFlags: 0
@@ -2935,7 +3011,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 203, y: 30}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &2053451103
 MonoBehaviour:

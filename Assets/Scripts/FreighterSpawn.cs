@@ -6,7 +6,7 @@ public class FreighterSpawn : MonoBehaviour {
     public GameObject Moon, Mars, Freighter;
     GameObject SpawnedFreighter;
     public Vector3 FreighterMove;
-    public float Progress;
+    public int AmountSpawned;
 
     // Use this for initialization
     void Start() {
