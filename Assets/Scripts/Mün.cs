@@ -23,7 +23,7 @@ public class Mün : MonoBehaviour {
         
         if(RescourcesOnMarsScript.Material > 20f*FreighterCargoBayMaximumCapacityLoadCarryingAbilities)
         {
-            RescourcesOnMarsScript.Material = RescourcesOnMarsScript.Material - 20f*FreighterCargoBayMaximumCapacityLoadCarryingAbilities;
+            RescourcesOnMarsScript.Material = RescourcesOnMarsScript.Material - 2f*FreighterCargoBayMaximumCapacityLoadCarryingAbilities;
             MaterialOnMün = MaterialOnMün + 2f*FreighterCargoBayMaximumCapacityLoadCarryingAbilities;
             freighterSpawn.SpawnFreighter();
             MaterialText.text = "Transfer material(" + FreighterCargoBayMaximumCapacityLoadCarryingAbilities.ToString("#.00") + ")";
