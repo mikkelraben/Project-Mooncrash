@@ -50,8 +50,8 @@ public class RescourcesOnMars : MonoBehaviour {
         else { MaterialButton.interactable = false; }
     
         //Do This last
-        MoneyText.text = "Money: " + Money;
-        MaterialText.text = "Material: " + Material;
+        MoneyText.text = "Money: " + Money.ToString("#.00");
+        MaterialText.text = "Material: " + Material.ToString("#.00");
 	}
     public void MOARBANK(){
         Bank++;
