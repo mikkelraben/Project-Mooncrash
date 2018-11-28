@@ -16,9 +16,9 @@ public class Efficency : MonoBehaviour {
 
     public void MineUpgrade()
     {
-        if (RescourcesOnMars.Money > 100 * MineLevel)
+        if (RescourcesOnMars.Money > 30 * MineLevel)
         {
-            RescourcesOnMars.Money = RescourcesOnMars.Money - (100 * MineLevel);
+            RescourcesOnMars.Money = RescourcesOnMars.Money - (30 * MineLevel);
             RescourcesOnMars.MaterialMineEfficieny= RescourcesOnMars.MaterialMineEfficieny + 0.25f;
             MineLevel++;
         }
@@ -26,9 +26,9 @@ public class Efficency : MonoBehaviour {
 
     public void BankUpgrade()
     {
-        if (RescourcesOnMars.Money > (100 * BankLevel))
+        if (RescourcesOnMars.Money > (30 * BankLevel))
         {
-            RescourcesOnMars.Money = RescourcesOnMars.Money - (100 * BankLevel);
+            RescourcesOnMars.Money = RescourcesOnMars.Money - (30 * BankLevel);
             RescourcesOnMars.BankEfficieny= RescourcesOnMars.BankEfficieny+ 0.25f;
             BankLevel++;
         }
@@ -36,10 +36,10 @@ public class Efficency : MonoBehaviour {
 
     public void FreigtherUpgrade()
     {
-        if (RescourcesOnMars.Money > (100*FreighterLevel))
+        if (RescourcesOnMars.Money > (30*FreighterLevel))
         {
-            RescourcesOnMars.Money = RescourcesOnMars.Money - (100 * FreighterLevel);
-            Mün.FreighterCargoBayMaximumCapacityLoadCarryingAbilities = Mün.FreighterCargoBayMaximumCapacityLoadCarryingAbilities + 0.05f;
+            RescourcesOnMars.Money = RescourcesOnMars.Money - (30 * FreighterLevel);
+            Mün.FreighterCargoBayMaximumCapacityLoadCarryingAbilities = Mün.FreighterCargoBayMaximumCapacityLoadCarryingAbilities + 0.2f;
             FreighterLevel++;
         }
     }
