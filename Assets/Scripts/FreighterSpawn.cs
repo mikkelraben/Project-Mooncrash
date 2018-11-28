@@ -17,7 +17,7 @@ public class FreighterSpawn : MonoBehaviour {
         Debug.Log("OK");
         SpawnedFreighter = Instantiate(Freighter, Mars.transform.position, Quaternion.identity);
         Debug.Log("Spawned");
-
+        AmountSpawned++;
     }
 	// Update is called once per frame
 	void Update () {
