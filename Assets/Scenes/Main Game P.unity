@@ -923,8 +923,8 @@ MonoBehaviour:
   MaterialButton: {fileID: 1443601128}
   BankEfficieny: 1
   MaterialMineEfficieny: 1
-  Money: 1e+13
-  Material: 10000
+  Money: 1
+  Material: 1
   Bank: 0
   MaterialMine: 0
   BankIncome: 0
@@ -1049,6 +1049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Missile: {fileID: 1595714947445544, guid: 5a0b7fe0ea6384eafbbd5a763f245921, type: 2}
+  WhatFreighter: {fileID: 0}
 --- !u!1 &994496364
 GameObject:
   m_ObjectHideFlags: 0

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SpawnMissile : MonoBehaviour {
-    public GameObject Missile;
+    public GameObject Missile, WhatFreighter;
     FlyMissile Fly;
 
 	// Use this for initialization
@@ -15,9 +15,11 @@ public class SpawnMissile : MonoBehaviour {
 	void Update () {
 		
 	}
-    void SpawnDaMissile (GameObject WhatFreighter){
+    public void SpawnDaMissile (GameObject Freighter){
+        WhatFreighter = Freighter;
         GameObject MissileToBeShat;
         MissileToBeShat = Instantiate(Missile, new Vector3(-4f, 0f, -2f), Quaternion.identity);
         Fly = MissileToBeShat.GetComponent<FlyMissile>();
+        Fly.Object = WhatFreighter;
     }
 }
