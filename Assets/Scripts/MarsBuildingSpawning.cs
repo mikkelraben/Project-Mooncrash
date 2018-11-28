@@ -3,13 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MarsBuildingSpawning : MonoBehaviour {
-    public Efficency Efficency;
-    public GameObject spaceColony;
+    public RescourcesOnMars RescourcesOnMars;
+    public GameObject SpaceColony;
     public GameObject MarsMine;
-   
-	
-	// Update is called once per frame
-	void Update () {
-        transform.localScale.Set(Efficency.BankLevel * 0.1, Efficency.BankLevel * 0.1, Efficency.BankLevel * 0.1, );
-        }
+    public float Scale;
+    void Start()
+    {
+        SpaceColony.transform.localScale.Set(0f, 0f, 0f);
+        MarsMine.transform.localScale.Set(0f, 0f, 0f);
+    }
+    // Update is called once per frame
+    void Update () {
+
+        SpaceColony.transform.localScale = new Vector3(RescourcesOnMars.Bank * Scale, RescourcesOnMars.Bank * Scale, RescourcesOnMars.Bank * Scale);
+        MarsMine.transform.localScale = new Vector3(RescourcesOnMars.MaterialMine*Scale, RescourcesOnMars.MaterialMine * Scale, RescourcesOnMars.MaterialMine * Scale);
+    }
 }
