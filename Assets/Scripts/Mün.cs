@@ -17,16 +17,16 @@ public class Mün : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        MaterialText.text = "Transfer material (" + FreighterCargoBayMaximumCapacityLoadCarryingAbilities.ToString("#.00") + ")";
+        MaterialText.text = "Transfer material (" + (FreighterCargoBayMaximumCapacityLoadCarryingAbilities*20f).ToString("#.00") + ")";
     }
     public void TransferToMün() {
         
         if(RescourcesOnMarsScript.Material > 20f*FreighterCargoBayMaximumCapacityLoadCarryingAbilities)
         {
             RescourcesOnMarsScript.Material = RescourcesOnMarsScript.Material - 20f*FreighterCargoBayMaximumCapacityLoadCarryingAbilities;
-            MaterialOnMün = MaterialOnMün + FreighterCargoBayMaximumCapacityLoadCarryingAbilities;
+            MaterialOnMün = MaterialOnMün + 20f*FreighterCargoBayMaximumCapacityLoadCarryingAbilities;
             freighterSpawn.SpawnFreighter();
-            MaterialText.text = "Transfer material(" + FreighterCargoBayMaximumCapacityLoadCarryingAbilities.ToString("#.00") + ")";
+            MaterialText.text = "Transfer material(" + (FreighterCargoBayMaximumCapacityLoadCarryingAbilities*20f).ToString("#.00") + ")";
             text.text = "Material On Moon: " + MaterialOnMün.ToString("#.00");
         }
     }

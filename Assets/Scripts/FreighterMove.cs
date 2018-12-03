@@ -7,13 +7,17 @@ public class FreighterMove : MonoBehaviour {
     public float Speed;
     public Heat Heat;
     public SpawnMissile Spawn;
+    public Mün Mün;
     // Use this for initialization
     void Start () {
         FreighterVector3 = Moon.transform.position - Mars.transform.position;
         Heat = GameObject.Find("Main Camera").GetComponent<Heat>();
-        if (Random.Range(1f, 0f) < Heat.HEAT)
+        if (Random.Range(1.2f, 0f) < Heat.HEAT)
         {
             Spawn = GameObject.Find("Main Camera").GetComponent<SpawnMissile>();
+            Spawn.SpawnDaMissile(gameObject);
+            Mün = GameObject.Find("Main Camera").GetComponent<Mün>();
+            Mün.MaterialOnMün = Mün.MaterialOnMün - 20f * Mün.FreighterCargoBayMaximumCapacityLoadCarryingAbilities;
         }
     }
 	

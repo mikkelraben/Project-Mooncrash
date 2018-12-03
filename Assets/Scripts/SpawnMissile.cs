@@ -15,9 +15,10 @@ public class SpawnMissile : MonoBehaviour {
 	void Update () {
 		
 	}
-    void SpawnDaMissile (GameObject WhatFreighter){
+    public void SpawnDaMissile (GameObject WhatFreighter){
         GameObject MissileToBeShat;
         MissileToBeShat = Instantiate(Missile, new Vector3(-4f, 0f, -2f), Quaternion.identity);
         Fly = MissileToBeShat.GetComponent<FlyMissile>();
+        Fly.GIVEMEINFO(WhatFreighter);
     }
 }
